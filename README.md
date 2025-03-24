@@ -9,8 +9,8 @@ database.py:
 
  🔹 Efter kørsel af database.py har du nu en database med tekststykker fra PDF'erne.
 
-chatbot.py: Formål: 
-- Søge i ChromaDB og få svar fra OpenAI.
+chatbot.py: 
+- Formål: Søge i ChromaDB og få svar fra OpenAI.
   1. Bruger indtaster et spørgsmål.
   2. ChromaDB søger efter det mest relevante tekststykke.
   3. OpenAI bruger tekststykket til at formulere et svar.
