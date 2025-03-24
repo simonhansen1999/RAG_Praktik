@@ -1,11 +1,10 @@
 import chromadb
 from openai import OpenAI
 from dotenv import load_dotenv
-from langchain.embeddings.openai import OpenAIEmbeddings
-
-load_dotenv()
+from langchain_openai import OpenAIEmbeddings
 
 # setting the environment
+load_dotenv()
 CHROMA_PATH = "chroma_db"
 
 # Initialize Chroma client
@@ -40,7 +39,7 @@ def handle_query(user_query):
         system_prompt = """
         You are a helpful assistant. You answer questions based on knowledge I provide you.
         You don't use your internal knowledge and you don't make things up.
-        If you don't know the answer, just say: Det ved jeg desværre ikke.
+        If you don't know the answer, just say that.
         --------------------
         The data:
         """ + str(results['documents']) + """
