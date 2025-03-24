@@ -15,6 +15,6 @@ chatbot.py:
   2. ChromaDB søger efter det mest relevante tekststykke.
   3. OpenAI bruger tekststykket til at formulere et svar.
   4. Svaret vises på skærmen.
-  5. Programmet fortsætter, indtil brugeren skriver "exit", "quit" eller "stop".
+  5. Programmet fortsætter, indtil brugeren skriver f.eks. "exit", "quit" eller "stop".
 
  🔹 Systemet sikrer, at svarene kun er baseret på de gemte data og ikke på AI'ens generelle viden
